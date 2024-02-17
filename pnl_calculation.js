@@ -410,7 +410,7 @@ async function runScanning (address) {
   } else if (totalWSolDiff < 0) {
     replyText +=
       'Wrapped Sol : ' +
-      totalWSolDiff +
+      totalWSolDiff + 
       ' price:' +
       totalWSolDiffPrice +
       '  😡😡😡 \n\n'
@@ -418,7 +418,7 @@ async function runScanning (address) {
     replyText += 'Wrapped Sol : 0 \n\n'
   }
 
-  replyText += 'Total PNL = ' + totalWSolDiffPrice + totalSolPrice + '\n'
+  replyText += 'Total PNL = ' + Number(totalWSolDiffPrice) + Number(totalSolPrice) + '\n'
   replyText += '------------ END ♥♥♥------------- \n'
   //   console.log(replyText);
   return replyText
