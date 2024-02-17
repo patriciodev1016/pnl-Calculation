@@ -76,9 +76,9 @@ async function runScanning(address) {
     return each.signature;
   });
 
-  // let latestTxns = latestTxn1000
+   let latestTxns = latestTxn1000
 
-  let latestTxns = latestTxn1000.slice(MIN, MAX);
+  //let latestTxns = latestTxn1000.slice(MIN, MAX);
 
   let replyText =
     " --------------- analysis transactions ------------------ \n";
