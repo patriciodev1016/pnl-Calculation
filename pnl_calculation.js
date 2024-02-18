@@ -65,7 +65,7 @@ async function runScanning(address) {
   const before = now - 24 * 3600;
   //   console.log('time', now, before)
 
-  console.log("time", now, before);
+  //console.log("time", now, before);
   latestSigns = latestSigns.filter(
     (each) => each.blockTime && each.blockTime >= before
   );
@@ -413,6 +413,7 @@ async function runScanning(address) {
 
   replyText += "------------ END ♥♥♥------------- \n";
   console.log("-----------finished!---------------");
+  console.log(returnText + replyText);
   return returnText + replyText;
   // return returnText
 }
